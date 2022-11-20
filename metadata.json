@@ -1,0 +1,13 @@
+{
+  "icon": "docker.svg",
+  "ui": {
+    "dashboard-tab": {
+      "title": "Image Puller",
+      "src": "index.html",
+      "root": "ui",
+      "backend": {
+        "socket": "extension-image-puller-extension.sock"
+      }
+    }
+  }
+}
