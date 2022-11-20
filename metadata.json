@@ -1,5 +1,5 @@
 {
-  "icon": "docker.svg",
+  "icon": "indiebits_logo.svg",
   "ui": {
     "dashboard-tab": {
       "title": "Image Puller",

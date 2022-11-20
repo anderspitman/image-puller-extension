@@ -12,8 +12,8 @@ RUN npm run build
 
 FROM alpine
 LABEL org.opencontainers.image.title="Image Puller" \
-    org.opencontainers.image.description="Pull images through GUI" \
-    org.opencontainers.image.vendor="Anders Pitman" \
+    org.opencontainers.image.description="Pull images through the Docker Desktop GUI" \
+    org.opencontainers.image.vendor="IndieBits.io" \
     com.docker.desktop.extension.api.version="0.3.0" \
     com.docker.desktop.extension.icon="https://docs.docker.com/assets/images/engine.svg" \
     com.docker.extension.screenshots="" \
@@ -25,6 +25,6 @@ LABEL org.opencontainers.image.title="Image Puller" \
 #COPY --from=builder /backend/bin/service /
 COPY docker-compose.yaml .
 COPY metadata.json .
-COPY docker.svg .
+COPY indiebits_logo.svg .
 COPY --from=client-builder /ui/build ui
 CMD /service -socket /run/guest-services/extension-image-puller-extension.sock
