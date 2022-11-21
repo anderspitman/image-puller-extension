@@ -1,5 +1,5 @@
-IMAGE?=anderspitman/image-puller-extension
-TAG?=latest
+IMAGE?=indiebits/image-puller-extension
+TAG?=0.1.0
 
 BUILDER=buildx-multi-arch
 
